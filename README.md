@@ -16,7 +16,7 @@ Following has been used to Setup the Automation using Playwright
 
 
 **Issues with Test**
-1) The tests are bit fragile and the scenario 'Plan a Journey' has Thread.Sleep (as due to lack of time I could not find the right element to wait for the dynamic dropdown) and I wanted to experiment with Playwright rather than Selenium which is faily new to me as well. You might have to put a breakpoint inside method 'planAJourneyPage.ClickOnMatchedStation' to see it working
+1) The tests are bit fragile and the scenario 'Plan a Journey' has Thread.Sleep (as due to lack of time I could not find the right element to wait for the dynamic dropdown) and I wanted to experiment with Playwright rather than Selenium which is fairly new to me as well. You might have to put a breakpoint inside method 'planAJourneyPage.ClickOnMatchedStation' to see it working
 2) Other tests also run (sometimes run again) as the 'Accept cookies) makes the background screen unavailable at times
 3) I have not asserted on things like timings etc as that would have made the tests fragile and this could be done on the lower API layer testing where stubs etc can be used. UI tests are more for testing the existing of elements after actions and hence validation of route (stations / timings etc has not been done as per the document)
 
