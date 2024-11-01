@@ -15,3 +15,8 @@ Following has been used to Setup the Automation using Playwright
    This process will take some time as it downloads all the browsers kits
 
 
+**Issues with Test**
+1) The tests are bit fragile and the scenario 'Plan a Journey' has Thread.Sleep (as due to lack of time I could not find the right element to wait for the dynamic dropdown) and I wanted to experiment with Playwright rather than Selenium which is faily new to me as well. You might have to put a breakpoint inside method 'planAJourneyPage.ClickOnMatchedStation' to see it working
+2) Other tests also run (sometimes run again) as the 'Accept cookies) makes the background screen unavailable at times
+
+
