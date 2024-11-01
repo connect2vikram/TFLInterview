@@ -21,5 +21,17 @@ Following has been used to Setup the Automation using Playwright
 3) I have not asserted on things like timings etc as that would have made the tests fragile and this could be done on the lower API layer testing where stubs etc can be used. UI tests are more for testing the existing of elements after actions and hence validation of route (stations / timings etc has not been done as per the document)
 
 
+**Other Testing Scenarios**
+1) Invalid characters accepted in stations
+2) More than 100 characters not allowed
+3) Does 'My location' works
+4) Does all other links on the Plan my journey work
+5) What does selecting on 'My location' work and how does it behaves if the google maps is not available
+6) Accessibility of the page (images with no alt text, link with no proper description)
+7) Performance of the Start and End drop down menu as that gets data based on input
+8) Performance of the Plan my journey between 2 stations
+9) What happens when API behind getting data between source and destination fails. How graceully TFL handles the data
+10) There is no security in general for this page unless the user is logged in
+
 
 
